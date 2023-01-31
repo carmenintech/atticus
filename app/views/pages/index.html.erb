@@ -1,0 +1,383 @@
+<body class="tw-text-neutral-700">
+  <!-- header -->
+  <header class="tw-z-50 tw-bg-gray-100 tw-text-neutral-600 tw-w-full">
+    <div class="tw-mx-auto tw-container tw-p-4 tw-grid lg:tw-flex lg:tw-justify-between tw-grid-cols-2">
+      <nav class="tw-flex tw-items-center">
+        <%= image_tag "https://tailwindui.com/img/logos/mark.svg?color=black" , class: "tw-w-12 tw-mr-16" %>
+          <ul class="lg:tw-flex tw-hidden">
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#">All courses</a>
+            </li>
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#">Student Portal</a>
+            </li>
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#">Support</a>
+            </li>
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#">Contact us</a>
+            </li>
+          </ul>
+      </nav>
+      <div class="tw-hidden lg:tw-block">
+        <button
+          class="tw-px-4 tw-py-3 tw-bg-transparent hover:tw-cursor-pointer tw-text-neutral-700 tw-rounded-lg tw-mr-8">
+          Sign In
+        </button>
+        <button class="tw-px-4 tw-py-3 tw-bg-neutral-800 hover:tw-cursor-pointer tw-text-neutral-50 tw-rounded-lg">
+          Get Your Card
+        </button>
+      </div>
+      <!-- mobile menu button -->
+      <button type="button"
+        class="lg:tw-hidden tw-justify-self-end tw-inline-flex tw-items-center tw-justify-center tw-rounded-md  tw-p-2  focus:tw-outline-none"
+        aria-controls="mobile-menu" aria-expanded="false">
+        <span class="tw-sr-only">Open main menu</span>
+        <!--
+         Menu open: "hidden", Menu closed: "block"
+       -->
+        <svg class="tw-lock tw-h-6 tw-w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <!--
+         Menu open: "block", Menu closed: "hidden"
+       -->
+        <svg class="tw-hidden tw-h-6 tw-w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <!-- mobile menu -->
+      <div id="mobile-menu"
+        class="tw-col-span-2 tw-bg-neutral-50 tw-text-neutral-700 tw-p-2 tw-mt-4 tw-rounded tw-shadow-lg lg:tw-hidden tw-z-50">
+        <ul class="tw-w-full tw-py-2">
+          <li
+            class="tw-bg-neutral-800 hover:tw-bg-neutral-400 tw-text-neutral-50 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50 tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#">Demos</a>
+          </li>
+          <li
+            class="hover:tw-bg-neutral-400 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50t tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#">About</a>
+          </li>
+          <li
+            class="hover:tw-bg-neutral-400 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50 tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#">Blog</a>
+          </li>
+          <li
+            class="hover:tw-bg-neutral-400 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50 tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#">Pages</a>
+          </li>
+          <li
+            class="hover:tw-bg-neutral-400 focus:tw-bg-neutral-400 hover:ttw-ext-neutral-50 focus:tw-text-neutral-50 tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="tw-border-t tw-border-neutral-400 tw-pt-4">
+          <button
+            class="tw-w-full tw-px-4 tw-py-3 tw-bg-neutral-900 hover:tw-cursor-pointer tw-text-neutral-50 tw-font-medium tw-rounded-lg">
+            Get Started now
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- hero -->
+  <section
+    class="tw-z-40 tw-relative tw-pt-12 lg:tw-pt-24 tw-px-4 md:tw-px-8 tw-overflow-hidden 2xl:tw-px-60 tw-mx-auto tw-grid tw-grid-cols-1 tw-gap-8 lg:tw-grid-cols-12 tw-relative tw-bg-gray-100">
+    <div class="tw-col-span-5">
+      <h1 class="tw-text-5xl lg:tw-text-8xl tw-font-bold tw-text-neutral-900 tw-mb-8">
+        The next gen <br />
+        payment <br />
+        method
+      </h1>
+      <p class="tw-font-light tw-mb-8">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dicta
+        provident ad porro nisi quidem voluptates.
+      </p>
+      <button class="tw-px-6 tw-py-3 tw-bg-neutral-800 hover:tw-cursor-pointer tw-text-neutral-50 tw-rounded-xl">
+        Get Your Card
+      </button>
+      <div class="tw-flex tw-flex-col lg:tw-flex-row lg:tw-items-center tw-pt-8 lg:tw-pt-16">
+        <p class="tw-text-3xl tw-font-bold tw-flex tw-flex-row tw-items-center lg:tw-mr-16">
+          2943
+          <small class="tw-text-sm tw-font-light tw-leading-none tw-ml-2">Cards <br />
+            Delivered</small>
+        </p>
+        <p class="tw-text-3xl tw-font-bold tw-flex tw-flex-row tw-items-center tw-flex-nowrap tw-pt-4 lg:tw-pt-0">
+          $1M +
+          <small class="tw-text-sm tw-font-light tw-leading-none tw-ml-2">Transactions <br />
+            Completed</small>
+        </p>
+      </div>
+    </div>
+    <div
+      class="tw-col-span-7 tw-pt-24 lg:tw-pt-0 lg:tw-pl-24 tw-align-self-center tw-relative tw-place-self-center tw-h-full tw-w-full">
+      <div class="tw-w-[300px]  tw-h-[300px] lg:tw-w-[600px] lg:tw-h-[600px] tw-bg-lime-200 tw-rounded-full"></div>
+      <%= image_tag "index/man.png" , class: "tw-absolute tw-left-10 lg:tw-top-[-150px] tw-top-0 tw-w-[700px]" %>
+        <%= image_tag "index/card.svg" , class: "tw-absolute tw-left-[80px] tw-top-[200px] tw-w-[200px] lg:tw-w-[400px]"
+          %>
+    </div>
+  </section>
+  <!-- benefits -->
+  <section
+    class="lg:tw-divide-x lg:tw-divide-y-0 tw-divide-y tw-z-40 tw-relative tw-py-24 tw-px-4 md:tw-px-8 tw-overflow-hidden 2xl:tw-px-60 tw-mx-auto tw-grid tw-grid-cols-1 tw-gap-8 lg:tw-grid-cols-12 tw-relative tw-bg-neutral-800 tw-text-neutral-50">
+    <div class="tw-col-span-4 lg:tw-px-16 tw-pt-8 lg:tw-pt-0">
+      <%= image_tag "index/clock.svg" %>
+        <p class="tw-font-bold tw-my-4">Solve problems in real time</p>
+        <p class="tw-text-sm tw-font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui
+          eius optio recusandae sint debitis officia animi ab vero, suscipit
+          accusantium commodi eos corporis natus perspiciatis corrupti incidunt
+          maxime quaerat!
+        </p>
+    </div>
+    <div class="tw-col-span-4 lg:tw-px-16 tw-pt-8 lg:tw-pt-0">
+      <%= image_tag "index/trust.svg" %>
+        <p class="tw-font-bold tw-my-4">Secured and safe payments</p>
+        <p class="tw-text-sm tw-font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui
+          eius optio recusandae sint debitis officia animi ab vero, suscipit
+          accusantium commodi eos corporis natus perspiciatis corrupti incidunt
+          maxime quaerat!
+        </p>
+    </div>
+    <div class="tw-col-span-4 lg:tw-px-16 tw-pt-8 lg:tw-pt-0">
+      <%= image_tag "index/face.svg" %>
+        <p class="tw-font-bold tw-my-4">24/7 customer support</p>
+        <p class="tw-text-sm tw-font-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui
+          eius optio recusandae sint debitis officia animi ab vero, suscipit
+          accusantium commodi eos corporis natus perspiciatis corrupti incidunt
+          maxime quaerat!
+        </p>
+    </div>
+  </section>
+  <!-- feature -->
+  <section
+    class="tw-bg-neutral-100 tw-content-center tw-z-40 tw-relative tw-py-24 tw-px-4 md:tw-px-8 tw-overflow-hidden 2xl:tw-px-60 tw-mx-auto tw-grid tw-gap-8 tw-grid-cols-12 tw-relative tw-h-max">
+    <div class="tw-col-span-12 lg:tw-col-span-8 tw-align-self-center tw-relative">
+      <div class="tw-bg-white tw-shadow-2xl tw-rounded-lg tw-p-8 tw-relative tw-max-w-lg tw-flex tw-flex-col">
+        <div class="tw-flex tw-items-center tw-p-2">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="50" rx="15" fill="#3B82F6" />
+            <path
+              d="M33.125 18.125H16.875C16.5293 18.125 16.25 18.4043 16.25 18.75V31.25C16.25 31.5957 16.5293 31.875 16.875 31.875H33.125C33.4707 31.875 33.75 31.5957 33.75 31.25V18.75C33.75 18.4043 33.4707 18.125 33.125 18.125ZM17.6562 19.5312H32.3438V21.875H17.6562V19.5312ZM32.3438 30.4688H17.6562V23.5938H32.3438V30.4688ZM27.7148 29.2188H30.9375C31.0234 29.2188 31.0938 29.1484 31.0938 29.0625V27.6562C31.0938 27.5703 31.0234 27.5 30.9375 27.5H27.7148C27.6289 27.5 27.5586 27.5703 27.5586 27.6562V29.0625C27.5586 29.1484 27.6289 29.2188 27.7148 29.2188Z"
+              fill="white" />
+          </svg>
+
+          <div class="tw-px-4">
+            <p class="tw-font-bold tw-leading-none">Add Card</p>
+            <small class="tw-leading-none tw-font-light tw-text-neutral-500">Add a card to your account</small>
+          </div>
+          <div class="tw-w-4 tw-h-4 tw-rounded-full tw-border tw-border-neutral-400 tw-ml-auto"></div>
+        </div>
+        <div class="tw-flex tw-items-center tw-p-2">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="50" rx="15" fill="#F59E0B" />
+            <path
+              d="M32.1875 17.1875H17.8125C17.4668 17.1875 17.1875 17.4668 17.1875 17.8125V32.1875C17.1875 32.5332 17.4668 32.8125 17.8125 32.8125H32.1875C32.5332 32.8125 32.8125 32.5332 32.8125 32.1875V17.8125C32.8125 17.4668 32.5332 17.1875 32.1875 17.1875ZM31.4062 26.25H25.3125V23.75H31.4062V26.25ZM31.4062 31.4062H18.5938V18.5938H31.4062V22.5H24.6875C24.3418 22.5 24.0625 22.7793 24.0625 23.125V26.875C24.0625 27.2207 24.3418 27.5 24.6875 27.5H31.4062V31.4062ZM26.3281 25C26.3281 25.2072 26.4104 25.4059 26.5569 25.5524C26.7035 25.6989 26.9022 25.7812 27.1094 25.7812C27.3166 25.7812 27.5153 25.6989 27.6618 25.5524C27.8083 25.4059 27.8906 25.2072 27.8906 25C27.8906 24.7928 27.8083 24.5941 27.6618 24.4476C27.5153 24.3011 27.3166 24.2188 27.1094 24.2188C26.9022 24.2188 26.7035 24.3011 26.5569 24.4476C26.4104 24.5941 26.3281 24.7928 26.3281 25Z"
+              fill="white" />
+          </svg>
+
+          <div class="tw-px-4">
+            <p class="tw-font-bold tw-leading-none">Add Crypto Wallet</p>
+            <small class="tw-leading-none tw-font-light tw-text-neutral-500">Connect to your crypto wallet</small>
+          </div>
+          <div class="tw-w-4 tw-h-4 tw-rounded-full tw-border tw-border-neutral-400 tw-ml-auto"></div>
+        </div>
+        <div class="tw-flex tw-items-center tw-bg-neutral-100 tw-p-2 tw-rounded-lg">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="50" rx="15" fill="#EF4444" />
+            <g clip-path="url(#clip0_102_112)">
+              <path
+                d="M26.479 22.883C24.853 22.279 23.967 21.816 23.967 21.08C23.967 20.458 24.478 20.103 25.39 20.103C27.057 20.103 28.769 20.745 29.948 21.323L30.614 17.212C29.679 16.766 27.767 16.035 25.124 16.035C23.254 16.035 21.699 16.524 20.588 17.436C19.433 18.39 18.831 19.77 18.831 21.436C18.831 24.459 20.678 25.748 23.678 26.839C25.614 27.527 26.257 28.017 26.257 28.773C26.257 29.505 25.628 29.928 24.495 29.928C23.092 29.928 20.779 29.239 19.264 28.35L18.59 32.507C19.894 33.239 22.295 33.995 24.787 33.995C26.763 33.995 28.411 33.528 29.522 32.639C30.767 31.662 31.412 30.217 31.412 28.35C31.412 25.259 29.523 23.97 26.477 22.882H26.479V22.883Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_102_112">
+                <rect width="24" height="24" fill="white" transform="translate(13 13)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <div class="tw-px-4">
+            <p class="tw-font-bold tw-leading-none">Add Stripe Account</p>
+            <small class="tw-leading-none tw-font-light tw-text-neutral-500">Connect to your stripe account</small>
+          </div>
+          <div class="tw-w-4 tw-h-4 tw-rounded-full tw-bg-green-400 tw-ml-auto tw-flex tw-items-center tw-align-center">
+          </div>
+        </div>
+      </div>
+      <div
+        class="tw-bg-white tw-shadow-2xl tw-rounded-lg tw-p-4 tw-relative tw-max-w-sm tw-font-bold tw-absolute tw-left-[100px] lg:tw-left-[300px] tw-top-[-250px]">
+        <small>Cashback</small>
+        <p class="tw-text-xl tw-py-2 tw-leading-none">
+          $1,324 <small class="tw-text-green-500 tw-text-sm">+ 4,5%</small>
+        </p>
+        <small class="tw-text-neutral-500 tw-font-light tw-leading-none">Compared to $890 last month</small>
+      </div>
+    </div>
+    <div class="tw-col-span-12 lg:tw-col-span-4">
+      <h2 class="tw-text-3xl lg:tw-text-4xl tw-font-bold">
+        A fully integrated suite <br />
+        of payments products
+      </h2>
+      <p class="tw-font-medium tw-py-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        possimus reprehenderit dolorem ipsam.
+      </p>
+      <p class="tw-font-light tw-text-neutral-500">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        suscipit quaerat expedita dignissimos numquam, nostrum consequuntur!
+        Facilis eos nam optio enim cum nihil corrupti ea perferendis ducimus
+        repellendus. Deleniti, ratione.
+      </p>
+    </div>
+  </section>
+  <!-- feature -->
+  <section
+    class="tw-items-center tw-z-40 tw-relative tw-py-24 tw-px-4 md:tw-px-8 tw-overflow-hidden 2xl:tw-px-60 tw-mx-auto tw-grid  tw-gap-8 tw-grid-cols-12 tw-relative">
+    <div class="tw-col-span-12 lg:tw-col-span-4 tw-h-max">
+      <h2 class="tw-text-3xl lg:tw-text-4xl tw-font-bold">
+        The backbone for <br />
+        internet business
+      </h2>
+      <p class="tw-font-light tw-text-neutral-500 tw-pt-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        suscipit quaerat expedita dignissimos numquam, nostrum consequuntur!
+        Facilis eos nam optio enim cum nihil corrupti ea perferendis ducimus
+        repellendus. Deleniti, ratione.
+      </p>
+      <hr class="tw-bg-neutral-500 tw-my-8" />
+      <p class="tw-font-medium tw-pb-4 tw-italic">
+        "Simple the best. Better than all the rest. Recommend the product."
+      </p>
+      <div class="tw-text-sm tw-flex tw-items-center">
+        <%= image_tag "https://tailwindui.com/img/logos/mark.svg?color=black" ,
+          class: "tw-w-8 tw-rounded-full tw-h-8 tw-mr-4" %>
+          <div>
+            <p class="tw-font-medium">Trevor Noah</p>
+            <p class="tw-text-neutral-500">
+              Director of Tech. At Commedy Central.
+            </p>
+          </div>
+      </div>
+    </div>
+    <div class="tw-col-span-12 lg:tw-col-span-8 tw-align-self-center tw-relative tw-place-self-center">
+      <div class="tw-w-[300px] lg:tw-w-[600px] tw-h-[300px] lg:tw-h-[600px] tw-bg-lime-200 tw-rounded-full"></div>
+      <%= image_tag "index/card_black.svg" %>
+
+        <%= image_tag "index/card_blue.svg" %>
+    </div>
+  </section>
+
+  <!-- stats -->
+  <section
+    class="tw-bg-lime-200 tw-text-neutral-800 tw-items-center tw-z-40 tw-relative tw-py-24 tw-px-4 md:tw-px-8 tw-overflow-hidden 2xl:tw-px-60 tw-mx-auto tw-grid tw-grid-cols-1 tw-gap-8 lg:tw-grid-cols-12 tw-relative">
+    <div class="tw-col-span-4 tw-h-max">
+      <h2 class="tw-text-4xl tw-font-bold">1.5M</h2>
+      <p class="tw-font-light tw-text-neutral-500 tw-pt-4 tw-max-w-xs">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        suscipit quaerat expedita.
+      </p>
+    </div>
+    <div class="tw-col-span-4 tw-h-max">
+      <h2 class="tw-text-4xl tw-font-bold">41%</h2>
+      <p class="tw-font-light tw-text-neutral-500 tw-pt-4 tw-max-w-xs">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        suscipit quaerat expedita.
+      </p>
+    </div>
+    <div class="tw-col-span-4 tw-h-max">
+      <h2 class="tw-text-4xl tw-font-bold">3964+</h2>
+      <p class="tw-font-light tw-text-neutral-500 tw-pt-4 tw-max-w-xs">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        suscipit quaerat expedita.
+      </p>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section
+    class="tw-items-center tw-z-40 tw-relative tw-py-24 tw-px-4 md:tw-px-8 tw-overflow-hidden 2xl:tw-px-60 tw-mx-auto tw-grid tw-gap-8 tw-grid-cols-12 tw-relative">
+    <div class="tw-col-span-12 lg:tw-col-span-4 tw-h-max">
+      <h2 class="tw-text-4xl tw-font-bold">Ready to get Started?</h2>
+      <p class="tw-font-light tw-text-neutral-500 tw-pt-4 tw-max-w-xs">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
+        aliquam voluptatem doloremque harum sequi placeat, ratione obcaecati
+        fuga reprehenderit debitis quidem quaerat omnis eaque alias, vitae
+        ipsa eveniet velit assumenda.
+      </p>
+
+      <div class="tw-flex tw-items-center tw-mt-8">
+        <button
+          class="tw-px-6 tw-py-3 tw-bg-neutral-800 hover:tw-cursor-pointer tw-text-neutral-50 tw-rounded-xl tw-mr-4">
+          Join Now
+        </button>
+        <button class="tw-px-6 tw-py-3 tw-border tw-border-neutral-800 hover:tw-cursor-pointer tw-rounded-xl">
+          Learn More
+        </button>
+      </div>
+    </div>
+    <div class="tw-col-span-12 lg:tw-col-span-8 tw-h-max tw-grid tw-grid-cols-2 tw-gap-8">
+      <div class="tw-col-span-2 lg:tw-col-span-1 tw-border tw-border-neutral-300 tw-rounded-lg tw-p-8">
+        <%= image_tag "index/dark_cloud.svg" %>
+          <p class="tw-font-bold tw-my-4">Solve problems in real time</p>
+          <p class="tw-text-sm tw-font-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui
+            eius optio recusandae sint debitis officia animi ab vero, suscipit
+            accusantium commodi eos corporis natus perspiciatis corrupti
+            incidunt maxime quaerat!
+          </p>
+      </div>
+      <div class="tw-col-span-2 lg:tw-col-span-1 tw-border tw-border-neutral-300 tw-rounded-lg tw-p-8">
+        <%= image_tag "index/dark_dots.svg" %>
+          <p class="tw-text-sm tw-font-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui
+            eius optio recusandae sint debitis officia animi ab vero, suscipit
+            accusantium commodi eos corporis natus perspiciatis corrupti
+            incidunt maxime quaerat!
+          </p>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="tw-bg-neutral-100 tw-items-center tw-z-40 tw-relative tw-py-16 tw-px-4 md:tw-px-8 tw-overflow-hidden 2xl:tw-px-60 tw-mx-auto tw-grid tw-grid-cols-1 tw-gap-8 lg:tw-grid-cols-12 tw-relative">
+    <div class="tw-col-span-12 lg:tw-col-span-9">
+      <h3 class="tw-font-medium tw-text-neutral-800 tw-text-5xl">
+        Make secure <br />
+        payment & grow <br />
+        your online business
+      </h3>
+    </div>
+    <div class="tw-col-span-12 lg:tw-col-span-3">
+      <div class="tw-flex tw-items-center tw-py-2">
+        <%= image_tag "index/pin.svg" %>
+          <p class="tw-ml-4">8502 Preston Rd. Inlgewood. Maine 98380, USA</p>
+      </div>
+      <div class="tw-flex tw-items-center tw-py-2">
+        <%= image_tag "index/email.svg" %>
+          <p class="tw-ml-4">support@fintech.co</p>
+      </div>
+    </div>
+    <div class="tw-col-span-12 tw-border-t tw-pt-8">
+      <ul class="tw-flex tw-flex-col lg:tw-flex-row">
+        <li class="tw-mr-8">
+          <a class="tw-font-light hover:tw-text-neutral-500" href="#">All courses</a>
+        </li>
+        <li class="tw-mr-8">
+          <a class="tw-font-light hover:tw-text-neutral-500" href="#">Student Portal</a>
+        </li>
+        <li class="tw-mr-8">
+          <a class="tw-font-light hover:tw-text-neutral-500" href="#">Support</a>
+        </li>
+        <li class="tw-mr-8">
+          <a class="tw-font-light hover:tw-text-neutral-500" href="#">Contact us</a>
+        </li>
+        <li class="lg:tw-ml-auto tw-mt-8 lg:tw-mt-0">
+          <small>Copyright 2022, All rights reserved</small>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
