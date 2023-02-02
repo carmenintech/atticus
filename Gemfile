@@ -62,6 +62,12 @@ group :development do
 
   gem 'htmlbeautifier'
 
+  gem "better_errors"
+  gem "pry"
+  gem "pry-rails"
+  gem "pry-awesome_print"
+  gem "awesome_print"
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
