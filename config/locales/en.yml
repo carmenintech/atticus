@@ -30,4 +30,27 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  devise:
+    already_have_account: I already have an account.
+    dont_have_account_html: Don't have an account? Sign up here.
+    reset_your_password: Reset your password.
+    set_password: Set New Password
+    set_password_heading: Please enter your new password.
+    resend_confirmation: Resend confirmation instructions.
+    resend_confirmation_heading: Didn't receive a confirmation email? Please enter your email below.
+    reset_password: Reset Password
+    reset_password_heading: Please enter your email.
+    signin: Sign In
+    signup: Sign Up
+    signin_heading: Please enter your email and password.
+    signup_heading: Please enter your email and password.
+
+  navbar:
+    about: About
+    contact: Contact
+    main_menu: Main Menu
+    services: Services
+    testimonials: Testimonials
+    sign_in: Sign in
+    sign_out: Sign out
+    try_now: Try now
