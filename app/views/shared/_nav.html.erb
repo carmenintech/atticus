@@ -1,0 +1,79 @@
+<!-- header -->
+  <header class="tw-z-50 tw-bg-gray-100 tw-text-neutral-600 tw-w-full">
+    <div class="tw-mx-auto tw-container tw-p-4 tw-grid lg:tw-flex lg:tw-justify-between tw-grid-cols-2">
+      <nav class="tw-flex tw-items-center">
+        <%= image_tag "https://tailwindui.com/img/logos/mark.svg?color=black" , class: "tw-w-12 tw-mr-16" %>
+          <ul class="lg:tw-flex tw-hidden">
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#"><%= t("navbar.services") %></a>
+            </li>
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#"><%= t("navbar.testimonials") %></a>
+            </li>
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#"><%= t("navbar.about") %></a>
+            </li>
+            <li class="tw-mr-8">
+              <a class="tw-font-light hover:tw-text-neutral-500" href="#"><%= t("navbar.contact") %></a>
+            </li>
+          </ul>
+      </nav>
+      <div class="tw-hidden lg:tw-block">
+        <%= link_to t("navbar.sign_in"), new_user_session_path(locale: I18n.locale), class: "tw-px-4 tw-py-3 tw-bg-transparent hover:tw-cursor-pointer tw-text-neutral-700 tw-rounded-lg tw-mr-8" %>
+
+        <button class="tw-px-4 tw-py-3 tw-bg-neutral-800 hover:tw-cursor-pointer tw-text-neutral-50 tw-rounded-lg">
+          <%= t("navbar.try_now") %>
+        </button>
+      </div>
+      <!-- mobile menu button -->
+      <button type="button"
+        class="lg:tw-hidden tw-justify-self-end tw-inline-flex tw-items-center tw-justify-center tw-rounded-md  tw-p-2  focus:tw-outline-none"
+        aria-controls="mobile-menu" aria-expanded="false">
+        <span class="tw-sr-only">
+          <%= t("navbar.main_menu") %>
+        </span>
+        <!--
+         Menu open: "hidden", Menu closed: "block"
+       -->
+        <svg class="tw-lock tw-h-6 tw-w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <!--
+         Menu open: "block", Menu closed: "hidden"
+       -->
+        <svg class="tw-hidden tw-h-6 tw-w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <!-- mobile menu -->
+      <div id="mobile-menu"
+        class="tw-col-span-2 tw-bg-neutral-50 tw-text-neutral-700 tw-p-2 tw-mt-4 tw-rounded tw-shadow-lg lg:tw-hidden tw-z-50">
+        <ul class="tw-w-full tw-py-2">
+          <li
+            class="tw-bg-neutral-800 hover:tw-bg-neutral-400 tw-text-neutral-50 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50 tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#"><%= t("navbar.services") %></a>
+          </li>
+          <li
+            class="hover:tw-bg-neutral-400 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50t tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#"><%= t("navbar.testimonials") %></a>
+          </li>
+          <li
+            class="hover:tw-bg-neutral-400 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50 tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#"><%= t("navbar.about") %></a>
+          </li>
+          <li
+            class="hover:tw-bg-neutral-400 focus:tw-bg-neutral-400 hover:tw-text-neutral-50 focus:tw-text-neutral-50 tw-p-2 tw-rounded">
+            <a class="tw-font-medium hover:tw-text-neutral-900" href="#"><%= t("navbar.contact") %></a>
+          </li>
+        </ul>
+        <div class="tw-border-t tw-border-neutral-400 tw-pt-4">
+          <button
+            class="tw-w-full tw-px-4 tw-py-3 tw-bg-neutral-900 hover:tw-cursor-pointer tw-text-neutral-50 tw-font-medium tw-rounded-lg">
+            <%= t("navbar.try_now") %>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
